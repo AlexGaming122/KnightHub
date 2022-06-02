@@ -1,0 +1,93 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local PrintTesting = Instance.new("TextButton")
+local JailBreak = Instance.new("TextButton")
+local Arsenal = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Main.BorderColor3 = Color3.fromRGB(170, 85, 255)
+Main.Position = UDim2.new(0.158845469, 0, 0.167785242, 0)
+Main.Size = UDim2.new(0, 515, 0, 297)
+Main.Active = true
+Main.Draggable = true
+
+TextLabel.Parent = ScreenGui
+TextLabel.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+TextLabel.BorderColor3 = Color3.fromRGB(170, 85, 255)
+TextLabel.Position = UDim2.new(0.15818432, 0, 0.167785242, 0)
+TextLabel.Size = UDim2.new(0, 515, 0, 50)
+TextLabel.Font = Enum.Font.ArialBold
+TextLabel.Text = "KnightHub | Made By Alex Gaming"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 24.000
+
+PrintTesting.Name = "Print Testing"
+PrintTesting.Parent = ScreenGui
+PrintTesting.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
+PrintTesting.BorderColor3 = Color3.fromRGB(147, 15, 255)
+PrintTesting.Position = UDim2.new(0.408528209, 0, 0.324384779, 0)
+PrintTesting.Size = UDim2.new(0, 151, 0, 42)
+PrintTesting.Font = Enum.Font.Arial
+PrintTesting.Text = "Test (Print Testing)"
+PrintTesting.TextColor3 = Color3.fromRGB(255, 255, 255)
+PrintTesting.TextSize = 18.000
+PrintTesting.MouseButton1Down:connect(function()
+	print(Testing)
+end)
+
+JailBreak.Name = "JailBreak"
+JailBreak.Parent = ScreenGui
+JailBreak.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
+JailBreak.BorderColor3 = Color3.fromRGB(147, 15, 255)
+JailBreak.Position = UDim2.new(0.176066041, 0, 0.324384779, 0)
+JailBreak.Size = UDim2.new(0, 151, 0, 42)
+JailBreak.Font = Enum.Font.Arial
+JailBreak.Text = "Jailbreak"
+JailBreak.TextColor3 = Color3.fromRGB(255, 255, 255)
+JailBreak.TextSize = 30.000
+JailBreak.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://projectevo.xyz/script/loader.lua"))()
+end)
+
+Arsenal.Name = "Arsenal"
+Arsenal.Parent = ScreenGui
+Arsenal.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
+Arsenal.BorderColor3 = Color3.fromRGB(147, 15, 255)
+Arsenal.Position = UDim2.new(0.643741429, 0, 0.324384779, 0)
+Arsenal.Size = UDim2.new(0, 151, 0, 42)
+Arsenal.Font = Enum.Font.Arial
+Arsenal.Text = "Arsenal"
+Arsenal.TextColor3 = Color3.fromRGB(255, 255, 255)
+Arsenal.TextSize = 30.000
+Arsenal.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Main", true))()
+end)
+
+TextLabel_2.Parent = ScreenGui
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+TextLabel_2.BorderColor3 = Color3.fromRGB(170, 85, 255)
+TextLabel_2.Position = UDim2.new(0.209078401, 0, 0.46085009, 0)
+TextLabel_2.Size = UDim2.new(0, 429, 0, 69)
+TextLabel_2.Font = Enum.Font.ArialBold
+TextLabel_2.Text = "Cooming Soon!"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 26.000
+
+TextLabel_3.Parent = ScreenGui
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+TextLabel_3.BorderColor3 = Color3.fromRGB(170, 85, 255)
+TextLabel_3.Position = UDim2.new(0.209078401, 0, 0.642058134, 0)
+TextLabel_3.Size = UDim2.new(0, 429, 0, 69)
+TextLabel_3.Font = Enum.Font.ArialBold
+TextLabel_3.Text = "Made By ! Alex Gaming#0001"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 26.000
